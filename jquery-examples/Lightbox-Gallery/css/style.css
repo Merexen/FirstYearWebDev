@@ -1,0 +1,35 @@
+body{
+  background:#333;
+  font-family: sans-serif;
+  color:#efefef;
+}
+
+.container{
+    margin: 0 auto;
+    width:960px;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+}
+p{
+  line-height: 1.6;   
+}
+
+/* Removing some of the default gallery styles */
+
+#cboxBottomLeft, #cboxBottomRight, #cboxMiddleRight, #cboxMiddleLeft, #cboxTopRight {
+    background:none !important;
+}
+
+
+.thumbnail{
+   float:left;
+    margin-right:10px;
+    border:2px solid #efefef;
+}
+
+.gallery-img li{
+    list-style: none;   
+}

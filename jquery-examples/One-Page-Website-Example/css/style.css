@@ -1,0 +1,78 @@
+body{
+    background:#333;
+    color:#efefef;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h2, p{
+    text-align:center; 
+    margin:0;
+    padding:0;
+}
+
+h2{
+   font-size:72px; 
+    
+}
+
+p{
+    font-size:28px; 
+    color:#efefef;#232323;
+}  
+
+nav{
+    position:fixed;
+    height:50px;
+    top:0;
+    right:0;
+    z-index:100;
+    background:rgba(0, 0, 0, 0.5);
+    width:100%;
+    
+}
+
+nav ul{
+    float: right;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    padding-right:20px;
+    
+}
+
+a{
+   color:white;
+    text-decoration: none;
+    display: block;
+}
+
+.homesection{
+    background:orange;   
+}
+.aboutsection{
+    background:pink;   
+}
+.gallerysection{
+    background:green;
+}
+.contactsection{
+    background:gray;
+    
+}
+
+.links{
+    margin-top:20px;
+    color:black;
+    font-size:20px;
+    font-weight: 600;
+}
+
+.links > a{
+   color:black;
+    text-decoration: underline;
+    font-weight: normal;
+}

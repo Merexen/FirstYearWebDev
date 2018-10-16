@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>One Page Website Example</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="css/jquery.fullPage.css"/>
+     <link rel="stylesheet" href="css/style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function() {
+           $('#fullpage').fullpage();
+           });
+    </script>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#slide1">Home</a></li>
+             <li><a href="#slide2">About</a></li>
+             <li><a href="#slide3">Gallery</a></li>
+             <li><a href="#slide4">Contact</a></li>
+        
+        </ul>
+    
+    </nav>
+    
+    <div id="fullpage">
+        <section class="section homesection" data-anchor="slide1">
+            <h2>Home</h2>
+            <p>This is the home section<br/>put whatever content you like in here!</p>
+        </section>
+        <section class="section aboutsection" data-anchor="slide2">
+            <h2>About</h2>
+            <p>This is the about section</p>
+        </section>
+        <section class="section gallerysection" data-anchor="slide3">
+            <h2>Gallery</h2>
+            <p>This is the gallery section</p>
+        </section>
+        <section class="section contactsection" data-anchor="slide4">
+            <h2>Contact</h2>
+            <p>This is the contact section</p>
+            <p class="links">Check out: 
+            <a href="https://www.google.com/fonts">https://www.google.com/fonts</a>          <a href="http://alvarotrigo.com/fullPage/">http://alvarotrigo.com/fullPage/</a>
+            <a href="http://bit.ly/20QLhpH">http://bit.ly/20QLhpH</a>
+            </p>
+        </section>
+    
+    
+    </div>
+
+</body>
+</html>

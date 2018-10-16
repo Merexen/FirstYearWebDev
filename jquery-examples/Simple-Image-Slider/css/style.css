@@ -1,0 +1,22 @@
+body{
+   background:#333;
+   font-family: sans-serif;
+   color:#efefef;
+}
+
+.container{
+    margin:0 auto;
+    width:960px;
+}
+
+.slider{
+    border:1px solid #efefef;   
+}
+
+a{
+  color:#efefef;   
+}
+
+p{
+  line-height: 1.4;   
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Animation Experiments</title>
+<style>
+	body{
+		background: #2E3547;
+	}
+	
+	html{
+		overflow-x: hidden;
+	}
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	header{
+		background: #58ABC5 url(img/LondonCityScape.svg) no-repeat center top;
+		background-size:cover;
+		height: 60vh;
+	}
+	.sun{
+		width:10%;
+		position: absolute;
+		right:100px;
+		top:30px;
+		animation: sun 3s linear infinite;
+
+	}
+	.cloud1{
+		width: 15%;
+		opacity: 0.8;
+		position: absolute;
+		left:-400px;
+		top:40px;
+		animation: cloud1 50s linear infinite 4s;
+	}
+	.cloud2{
+		width:10%;
+		opacity: 0.4;
+		animation: cloud2 30s linear infinite;
+
+	}
+	.plane{
+		width:15%;
+		position: absolute;
+		top:100px;
+		animation:plane 15s linear infinite;/* Animation Name, duration, way it moves, looping */
+	}
+	
+	@keyframes plane{
+		from{
+			transform: translateX(-400px);
+		}
+		to{
+			transform: translateX(2000px);
+		}
+	}
+	@keyframes cloud1{
+		from{
+			transform: translateX(-500px);
+		}
+		to{
+			transform: translateX(2000px);
+		}
+	}
+		@keyframes cloud2{
+		from{
+			transform: translateX(-500px);
+		}
+		to{
+			transform: translateX(2000px);
+		}
+	}
+	
+		@keyframes sun{
+		0%{
+			filter: brightness(100%);
+		}
+		50%{
+			filter: brightness(200%);	
+		}
+		100%{
+			filter: brightness(100%);
+		}
+	}
+	.monster{
+		width:192px;
+		height:240px;
+		background: url(img/monster.png) no-repeat 0 0;
+		position: absolute;
+		bottom: 350px;
+		left:20px;
+		animation: monster 0.4s steps(10) infinite;
+	}
+	
+	@keyframes monster{
+		to{
+			background-position: -1900px;
+		}
+	}
+	
+	.tap{
+		width: 200px;
+		height: 200px;
+		background: url(img/css_sprites.png) no-repeat 0 0;
+		animation: tap 1s steps(10) infinite;
+	}
+	@keyframes tap{
+		to{
+			background-position: -2000px;
+		}
+	}
+	
+</style>
+</head>
+<body>
+	<header>
+		<img src="img/sun.png" class="sun"/>
+		<img src="img/cloud.svg" class="cloud1"/>
+		<img src="img/cloud.svg" class="cloud2"/>
+		<img src="img/airplane.svg" class="plane"/>
+		<div class="monster"></div>
+
+	</header>
+		<div class="tap"></div>
+</body>
+</html>

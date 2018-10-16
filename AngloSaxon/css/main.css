@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Style document "Anglo Saxon Info website of EKC project" - by Matt Halliday 2017*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.clear-fix {
+    border: none;
+    clear: both;
+    padding: 30px;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+footer {
+    background: #7f482c;
+    padding: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-container {
+    width: 1100px;
+    margin: 0 auto;
+    line-height: 1.5;
+    padding: 80px;
+    padding-bottom: 60px;
+	position: relative;
+}
+
+.review-container {
+    width: 85%;
+    margin: 0 auto;
+    line-height: 1.5;
+    padding: 80px;
+    padding-bottom: 60px;
+	position: relative;
+}
+
+.overly {
+    position: relative;
+}
+
+.overly::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background: url(../img/anglo-saxon-header.jpg) no-repeat 0 0;
+    filter: brightness(.3);
+    height: 80vh;
+}
+
+nav {
+    background: rgba(000, 000, 000, 0.5);
+    height: 65px;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+nav ul {
+    text-align: center;
+    line-height: 4;
+}
+
+nav li {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+nav li a {
+    color: #F2F2F2;
+    padding: 10;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #7f482c;
+}
+
+header{
+	overflow: auto;
+	height: 80vh;
+	
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    animation-delay: 0.5s;
+    font-size: 80px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header h2 {
+    color: white;
+    text-align: center;
+    animation-delay: 0.9s;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.box1right {
+    width: 290px;
+    height: 290px;
+    float: right;
+    margin-left: 20px;
+}
+
+.box1left {
+    height: 290px;
+    width: 730px;
+    float: left;
+    text-align: left;
+	position: relative;
+}
+
+.title-headers {
+    text-align: center;
+    padding-top: 1.5%;
+    font-size: 30px;
+    color: #282828;   
+}
+
+.grey-bar {
+    align-content: center;
+    width: 99.9%;
+}
+
+.download-button {
+	height: 45px;
+	width: 180px;
+	padding-top: 10px;
+	border: 4px #7f482c solid;
+	text-align: center;
+	background: transparent;
+	font-size: 24px;
+	color: #7f482c;
+	transition: all 0.3s ease;
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+	display: block;
+	text-decoration: none;
+}
+
+.download-button:hover {
+	background: rgba(0,0,0,0.20)
+}
+
+.blank-space {
+	text-align: center;
+	margin-top: 10%;
+	color: #A71E4D;
+}

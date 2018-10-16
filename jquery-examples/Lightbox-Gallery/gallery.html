@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lightbox Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+     
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/colorbox.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<script>
+   
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+            });
+    </script>
+</head>
+<body>
+<div class="container">      
+<section class="gallery"> 
+   
+    <h2>jQuery Lightbox Gallery Example</h2>
+    <p>This example allows you to create clickable thumbnail images that expand to display a large version of the image. This is a great method for creating an interactive gallery of images especially where you want the user to remain on the same page to view images. This example is freely available from: http://www.jacklmoore.com/colorbox/. Searching 'lightbox' on Google will return many results. Lightbox examples may vary slightly but every example requires that you add jQuery to your html document.</p>
+<ul class="gallery-img">
+    <li><a class="group1" href="images/whit1.jpg" title="The Street"><img src="images/thumb1.jpg" class="thumbnail"/></a></li>
+    <li><a class="group1" href="images/whit2.jpg" title="Beach Hut"><img src="images/thumb2.jpg" class="thumbnail"/></a></li>
+    <li><a class="group1" href="images/whit3.jpg" title="Whitstable Sunset"><img src="images/thumb3.jpg" class="thumbnail"/></a></li>
+</ul>
+</section> 
+</div><!-- end container -->
+</body>
+</html>

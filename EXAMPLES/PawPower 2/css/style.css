@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+
+html{
+	overflow-x: hidden;
+}
+body{
+	background:#FFF;
+	line-height: 1.8;
+	font-family: sans-serif;
+}
+
+.container{
+	width:960px;
+	margin:0 auto; /* This puts the container in the middle of the browser window */
+}
+
+header{
+	height:80vh;
+	position: relative;
+	border-bottom:4px solid #CAD4AD;
+
+}
+
+.headerinfo{
+	position: absolute;
+	top:350px;
+	left:100px;
+	background: rgba(161, 210, 205, 0.4);
+	border: 2px solid rgba(161, 210, 205, 0.4); 
+	padding:10px 10px;
+	width: 25%;
+	text-align: center;
+}
+
+
+header h1{
+	font-size: 70px;
+	color:#fff;
+	line-height: 1;
+}
+
+
+header h2{
+color:#fff;
+	font-weight: lighter;
+
+}
+
+a {outline : none;}
+
+nav{
+	background: rgba(255, 255, 255, 0.5);
+	height: 80px;
+	position: fixed;
+	width: 100%;
+	z-index: 200;
+}
+
+nav ul{
+	float: right;
+	line-height: 4;
+}
+
+nav li{
+	display: inline-block;
+	padding-right: 20px;
+}
+
+nav li a{
+	color:#333;
+	padding:10px;
+	text-decoration: none;
+}
+
+nav li a:hover{
+	background: yellow;
+	color:green;
+}
+
+.overly {
+  position: relative;
+
+  
+}
+
+.overly::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  background: url("../img/dog-banner2.jpg") center bottom;
+  background-size: cover;
+  
+  height:80vh;
+}
+
+
+section{
+	padding:80px 0; /* space at top and bottom, 0 space at left and right */
+}
+
+.intro{
+	background:#E5D9C2;
+}
+
+footer{
+	text-align: center;
+	line-height: 2;
+	padding:40px 0;
+}
+
